@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SIM808:SIM808 IC1
+L trackix-rescue:SIM808-SIM808 IC1
 U 1 1 5C6715B2
 P 2900 3900
 F 0 "IC1" H 2900 6567 50  0000 C CNN
@@ -172,7 +172,7 @@ Connection ~ 3950 5400
 Wire Wire Line
 	3950 5400 3700 5400
 $Comp
-L Device:R R3
+L trackix-rescue:R-Device R3
 U 1 1 5C67599C
 P 4700 5200
 F 0 "R3" V 4700 5150 50  0000 C CNN
@@ -183,7 +183,7 @@ F 3 "~" H 4700 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R2
+L trackix-rescue:R-Device R2
 U 1 1 5C675A49
 P 4700 5300
 F 0 "R2" V 4700 5250 50  0000 C CNN
@@ -194,7 +194,7 @@ F 3 "~" H 4700 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R1
+L trackix-rescue:R-Device R1
 U 1 1 5C675AC4
 P 4700 5600
 F 0 "R1" V 4700 5550 50  0000 C CNN
@@ -257,7 +257,7 @@ F 3 "~" H 4600 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D1
+L trackix-rescue:LED-Device D1
 U 1 1 5C67E447
 P 4100 4500
 F 0 "D1" H 4150 4600 50  0000 C CNN
@@ -268,7 +268,7 @@ F 3 "~" H 4100 4500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R4
+L trackix-rescue:R-Device R4
 U 1 1 5C67E55B
 P 5000 4500
 F 0 "R4" V 5100 4450 50  0000 C CNN
@@ -392,7 +392,7 @@ Connection ~ 5000 1900
 Wire Wire Line
 	2100 5500 1550 5500
 $Comp
-L Connector:Conn_Coaxial J2
+L trackix-rescue:Conn_Coaxial-Connector J2
 U 1 1 5C697DB2
 P 1550 4750
 F 0 "J2" V 1787 4680 50  0001 C CNN
@@ -403,7 +403,7 @@ F 3 " ~" H 1550 4750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J1
+L trackix-rescue:Conn_Coaxial-Connector J1
 U 1 1 5C697E95
 P 1100 4750
 F 0 "J1" V 1337 4680 50  0001 C CNN
@@ -446,7 +446,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 4750 1300 4900
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U1
+L trackix-rescue:ATmega328P-AU-MCU_Microchip_ATmega U1
 U 1 1 5C69F59F
 P 8650 3050
 F 0 "U1" H 8650 1464 50  0000 C CNN
@@ -457,7 +457,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal 8MHz1
+L trackix-rescue:Crystal-Device 8MHz1
 U 1 1 5C69FEF1
 P 10350 2550
 F 0 "8MHz1" V 10304 2681 50  0000 L CNN
@@ -468,7 +468,7 @@ F 3 "~" H 10350 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C11
+L trackix-rescue:C_Small-Device C11
 U 1 1 5C6A0E74
 P 10800 2400
 F 0 "C11" V 10700 2500 50  0000 C CNN
@@ -479,7 +479,7 @@ F 3 "~" H 10800 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C10
+L trackix-rescue:C_Small-Device C10
 U 1 1 5C6A0F45
 P 10800 2700
 F 0 "C10" V 10750 2800 50  0000 C CNN
@@ -561,7 +561,7 @@ Connection ~ 8650 1400
 Wire Wire Line
 	8650 1400 8650 1550
 $Comp
-L Device:C_Small C12
+L trackix-rescue:C_Small-Device C12
 U 1 1 5C6B2906
 P 7850 1850
 F 0 "C12" V 7621 1850 50  0000 C CNN
@@ -607,7 +607,7 @@ F 3 "" H 9650 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
+L trackix-rescue:R-Device R6
 U 1 1 5C6B93E2
 P 9650 3050
 F 0 "R6" H 9720 3096 50  0000 L CNN
@@ -629,7 +629,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 2800 9650 2900
 $Comp
-L Device:LED D2
+L trackix-rescue:LED-Device D2
 U 1 1 5C6C4882
 P 10350 1950
 F 0 "D2" H 10342 1695 50  0000 C CNN
@@ -651,7 +651,7 @@ F 3 "" H 10600 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L trackix-rescue:R-Device R7
 U 1 1 5C6C4BDB
 P 9950 2150
 F 0 "R7" H 10020 2196 50  0000 L CNN
@@ -674,7 +674,7 @@ Wire Wire Line
 Wire Wire Line
 	10600 1950 10600 2100
 $Comp
-L Connector:AVR-ISP-6 J4
+L trackix-rescue:AVR-ISP-6-Connector J4
 U 1 1 5C6CC941
 P 9950 1050
 F 0 "J4" V 9533 1100 50  0000 C CNN
@@ -685,7 +685,7 @@ F 3 " ~" H 8675 500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Jumper_NC_Dual JP1
+L trackix-rescue:Jumper_NC_Dual-Device JP1
 U 1 1 5C6CCCFE
 P 11050 950
 F 0 "JP1" H 11050 1189 50  0000 C CNN
@@ -713,7 +713,7 @@ Wire Wire Line
 Wire Wire Line
 	11200 1350 11200 1300
 $Comp
-L Device:Battery_Cell BT1
+L trackix-rescue:Battery_Cell-Device BT1
 U 1 1 5C6D0064
 P 11750 950
 F 0 "BT1" V 12005 1000 50  0000 C CNN
@@ -814,7 +814,7 @@ F 3 "" H 14650 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C14
+L trackix-rescue:C_Small-Device C14
 U 1 1 5C6EEA9E
 P 14650 1150
 F 0 "C14" H 14742 1196 50  0000 L CNN
@@ -867,7 +867,7 @@ F 3 "" H 14250 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C13
+L trackix-rescue:C_Small-Device C13
 U 1 1 5C70B4FC
 P 14250 1150
 F 0 "C13" H 14342 1196 50  0000 L CNN
@@ -898,7 +898,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 3600 2100 3600
 $Comp
-L Transistor_BJT:2N3904 Q1
+L trackix-rescue:2N3904-Transistor_BJT Q1
 U 1 1 5C72ED41
 P 10100 4650
 F 0 "Q1" H 10291 4696 50  0000 L CNN
@@ -909,7 +909,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 10100 4650 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L trackix-rescue:R-Device R5
 U 1 1 5C72EFB0
 P 9400 4450
 F 0 "R5" V 9607 4450 50  0000 C CNN
@@ -946,7 +946,7 @@ Wire Wire Line
 Wire Wire Line
 	10200 4850 10200 5050
 $Comp
-L Transistor_BJT:2N3904 Q2
+L trackix-rescue:2N3904-Transistor_BJT Q2
 U 1 1 5C758481
 P 11650 4150
 F 0 "Q2" H 11841 4196 50  0000 L CNN
@@ -957,7 +957,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 11650 4150 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R9
+L trackix-rescue:R-Device R9
 U 1 1 5C75D87F
 P 11250 4150
 F 0 "R9" V 11457 4150 50  0000 C CNN
@@ -972,7 +972,7 @@ Wire Wire Line
 Wire Wire Line
 	10200 3350 10300 3350
 $Comp
-L Switch:SW_Push reset1
+L trackix-rescue:SW_Push-Switch reset1
 U 1 1 5C6B6F4E
 P 10000 3350
 F 0 "reset1" H 10000 3635 50  0001 C CNN
@@ -998,7 +998,7 @@ $EndComp
 Wire Wire Line
 	11750 4350 11750 4650
 $Comp
-L Device:LED D5
+L trackix-rescue:LED-Device D5
 U 1 1 5C78419F
 P 12050 3600
 F 0 "D5" H 12041 3816 50  0000 C CNN
@@ -1009,7 +1009,7 @@ F 3 "~" H 12050 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D6
+L trackix-rescue:LED-Device D6
 U 1 1 5C7842CF
 P 12050 3800
 F 0 "D6" H 12041 4016 50  0000 C CNN
@@ -1020,7 +1020,7 @@ F 3 "~" H 12050 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D4
+L trackix-rescue:LED-Device D4
 U 1 1 5C7898D9
 P 12050 3400
 F 0 "D4" H 12041 3616 50  0000 C CNN
@@ -1084,7 +1084,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 4250 9250 4250
 $Comp
-L Device:LED D3
+L trackix-rescue:LED-Device D3
 U 1 1 5C81A3A1
 P 10900 1550
 F 0 "D3" H 10900 1450 50  0000 C CNN
@@ -1106,7 +1106,7 @@ F 3 "" H 11150 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L trackix-rescue:R-Device R8
 U 1 1 5C81AB5D
 P 10650 1200
 F 0 "R8" H 10720 1246 50  0000 L CNN
@@ -1130,7 +1130,7 @@ Wire Wire Line
 Wire Wire Line
 	10750 1550 10650 1550
 $Comp
-L CBT-09427-SMT:CBT-09427-SMT LS1
+L trackix-rescue:CBT-09427-SMT-CBT-09427-SMT LS1
 U 1 1 5C851AE6
 P 10800 4900
 F 0 "LS1" H 10905 4946 50  0000 L CNN
@@ -1151,56 +1151,56 @@ Wire Wire Line
 Wire Wire Line
 	10400 5100 10800 5100
 $Comp
-L SIM5060-6-0-26-01-X_REVC:SIM5060-6-0-26-01-X_REVC J3
-U 1 1 5C862014
-P 5700 5350
-F 0 "J3" H 5700 5717 50  0000 C CNN
-F 1 "SIM5060-6-0-26-01-X_REVC" H 5700 5626 50  0000 C CNN
-F 2 "SIM5060-6-0-26-01-X_REVC:GCT_SIM5060-6-0-26-01-X_REVC" H 5700 5350 50  0001 L BNN
-F 3 "None" H 5700 5350 50  0001 L BNN
-F 4 "Unavailable" H 5700 5350 50  0001 L BNN "Field4"
-F 5 "Global Connector Technology" H 5700 5350 50  0001 L BNN "Field5"
-F 6 "SIM5060-6-0-26-01-A" H 5700 5350 50  0001 L BNN "Field6"
-F 7 "None" H 5700 5350 50  0001 L BNN "Field7"
-F 8 "6 Position 2.6 mm Profile Surface Mount Hinged SIM Card Connector" H 5700 5350 50  0001 L BNN "Field8"
-	1    5700 5350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0102
 U 1 1 5C86A9E8
-P 6250 5650
-F 0 "#PWR0102" H 6250 5400 50  0001 C CNN
-F 1 "GND" H 6255 5477 50  0000 C CNN
-F 2 "" H 6250 5650 50  0001 C CNN
-F 3 "" H 6250 5650 50  0001 C CNN
-	1    6250 5650
+P 6250 6250
+F 0 "#PWR0102" H 6250 6000 50  0001 C CNN
+F 1 "GND" H 6255 6077 50  0000 C CNN
+F 2 "" H 6250 6250 50  0001 C CNN
+F 3 "" H 6250 6250 50  0001 C CNN
+	1    6250 6250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 5450 6250 5450
-Wire Wire Line
-	6250 5450 6250 5650
-Wire Wire Line
-	6100 5350 6300 5350
-Wire Wire Line
-	6300 5350 6300 5100
 Wire Wire Line
 	4950 5100 6300 5100
 Wire Wire Line
-	5200 5200 5200 5250
-Wire Wire Line
-	5200 5250 5300 5250
-Wire Wire Line
-	4850 5200 5200 5200
-Wire Wire Line
-	5300 5350 5200 5350
-Wire Wire Line
-	5200 5350 5200 5600
-Wire Wire Line
 	4850 5600 5200 5600
+$Comp
+L SIM7100-6-1-15-00-X_REVA:SIM7100-6-1-15-00-X_REVA J3
+U 1 1 5C6B3FC2
+P 5700 6000
+F 0 "J3" H 5700 6367 50  0000 C CNN
+F 1 "SIM7100-6-1-15-00-X_REVA" H 5700 6276 50  0000 C CNN
+F 2 "SIM7100-6-1-15-00-X_REVA:GCT_SIM7100-6-1-15-00-X_REVA" H 5700 6000 50  0001 L BNN
+F 3 "None" H 5700 6000 50  0001 L BNN
+F 4 "Global Connector Technology" H 5700 6000 50  0001 L BNN "Field4"
+F 5 "None" H 5700 6000 50  0001 L BNN "Field5"
+F 6 "6 Position 2.54 mm Pitch Push-Push 1.5 mm Profile Micro SIM Card Connector" H 5700 6000 50  0001 L BNN "Field6"
+F 7 "SIM7100-6-1-15-00-A" H 5700 6000 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 5700 6000 50  0001 L BNN "Field8"
+	1    5700 6000
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5300 5450 5050 5450
+	6100 6100 6250 6100
 Wire Wire Line
-	5050 5450 5050 5300
+	6250 6100 6250 6250
+Wire Wire Line
+	6100 6000 6300 6000
+Wire Wire Line
+	5050 6100 5300 6100
+Wire Wire Line
+	5200 5600 5200 6000
+Wire Wire Line
+	5200 6000 5300 6000
+Wire Wire Line
+	5300 5900 5250 5900
+Wire Wire Line
+	5250 5900 5250 5200
+Wire Wire Line
+	4850 5200 5250 5200
+Wire Wire Line
+	5050 5300 5050 6100
+Wire Wire Line
+	6300 5100 6300 6000
 $EndSCHEMATC

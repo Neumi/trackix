@@ -1,82 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# SIM7100-6-1-15-00-X_REVA_SIM7100-6-1-15-00-X_REVA
+# 2N3904-Transistor_BJT
 #
-DEF SIM7100-6-1-15-00-X_REVA_SIM7100-6-1-15-00-X_REVA J 0 40 N Y 1 L N
-F0 "J" -300 220 50 H V L BNN
-F1 "SIM7100-6-1-15-00-X_REVA_SIM7100-6-1-15-00-X_REVA" -300 -401 50 H V L BNN
-F2 "GCT_SIM7100-6-1-15-00-X_REVA" 0 0 50 H I L BNN
-F3 "None" 0 0 50 H I L BNN
-F4 "Global Connector Technology" 0 0 50 H I L BNN
-F5 "None" 0 0 50 H I L BNN
-F6 "6 Position 2.54 mm Pitch Push-Push 1.5 mm Profile Micro SIM Card Connector" 0 0 50 H I L BNN
-F7 "SIM7100-6-1-15-00-A" 0 0 50 H I L BNN
-F8 "Unavailable" 0 0 50 H I L BNN
-DRAW
-P 2 0 0 10 -300 -300 300 -300 N
-P 2 0 0 10 -300 200 -300 -300 N
-P 2 0 0 10 300 -300 300 200 N
-P 2 0 0 10 300 200 -300 200 N
-X VCC C1 400 0 100 L 40 40 0 0 W
-X RST C2 -400 100 100 R 40 40 0 0 I
-X CLK C3 -400 -100 100 R 40 40 0 0 B C
-X GND C5 400 -100 100 L 40 40 0 0 W
-X VPP C6 400 100 100 L 40 40 0 0 W
-X I/O C7 -400 0 100 R 40 40 0 0 B
-X CD CD -400 -200 100 R 40 40 0 0 P
-ENDDRAW
-ENDDEF
-#
-# power_+BATT
-#
-DEF power_+BATT #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+BATT" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +BATT 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# pspice_CAP
-#
-DEF pspice_CAP C 0 10 Y Y 1 F N
-F0 "C" 100 150 50 V V C CNN
-F1 "pspice_CAP" 100 -150 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS C
-DRAW
-P 2 0 1 0 -150 -50 150 -50 N
-P 2 0 1 0 -150 50 150 50 N
-X ~ 1 0 250 200 D 40 40 1 1 P
-X ~ 2 0 -250 200 U 40 40 1 1 P
-ENDDRAW
-ENDDEF
-#
-# trackix-rescue_2N3904-Transistor_BJT
-#
-DEF trackix-rescue_2N3904-Transistor_BJT Q 0 0 Y N 1 F N
+DEF 2N3904-Transistor_BJT Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "trackix-rescue_2N3904-Transistor_BJT" 200 0 50 H V L CNN
+F1 "2N3904-Transistor_BJT" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-92_Inline" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -94,11 +23,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_ATmega328P-AU-MCU_Microchip_ATmega
+# ATmega328P-AU-MCU_Microchip_ATmega
 #
-DEF trackix-rescue_ATmega328P-AU-MCU_Microchip_ATmega U 0 20 Y Y 1 F N
+DEF ATmega328P-AU-MCU_Microchip_ATmega U 0 20 Y Y 1 F N
 F0 "U" -500 1450 50 H V L BNN
-F1 "trackix-rescue_ATmega328P-AU-MCU_Microchip_ATmega" 100 -1450 50 H V L TNN
+F1 "ATmega328P-AU-MCU_Microchip_ATmega" 100 -1450 50 H V L TNN
 F2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -141,11 +70,11 @@ X PD5 9 600 -1000 100 L 50 50 1 1 T
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_AVR-ISP-6-Connector
+# AVR-ISP-6-Connector
 #
-DEF trackix-rescue_AVR-ISP-6-Connector J 0 40 Y Y 1 F N
+DEF AVR-ISP-6-Connector J 0 40 Y Y 1 F N
 F0 "J" 0 400 50 H V L CNN
-F1 "trackix-rescue_AVR-ISP-6-Connector" 0 -300 50 H V L CNN
+F1 "AVR-ISP-6-Connector" 0 -300 50 H V L CNN
 F2 "" -250 50 50 V I C CNN
 F3 "" -1275 -550 50 H I C CNN
 $FPLIST
@@ -169,11 +98,11 @@ X GND 6 -100 -400 150 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_Battery_Cell-Device
+# Battery_Cell-Device
 #
-DEF trackix-rescue_Battery_Cell-Device BT 0 0 N N 1 F N
+DEF Battery_Cell-Device BT 0 0 N N 1 F N
 F0 "BT" 100 100 50 H V L CNN
-F1 "trackix-rescue_Battery_Cell-Device" 100 0 50 H V L CNN
+F1 "Battery_Cell-Device" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -188,11 +117,11 @@ X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_CBT-09427-SMT-CBT-09427-SMT
+# CBT-09427-SMT-CBT-09427-SMT
 #
-DEF trackix-rescue_CBT-09427-SMT-CBT-09427-SMT LS 0 40 N N 1 L N
+DEF CBT-09427-SMT-CBT-09427-SMT LS 0 40 N N 1 L N
 F0 "LS" -201 301 50 H V L BNN
-F1 "trackix-rescue_CBT-09427-SMT-CBT-09427-SMT" -201 -351 50 H V L BNN
+F1 "CBT-09427-SMT-CBT-09427-SMT" -201 -351 50 H V L BNN
 F2 "CUI_CBT-09427-SMT" 0 0 50 H I L BNN
 F3 "CUI Inc." 0 0 50 H I L BNN
 F4 "https://www.cui.com/product/audio/buzzers/audio-transducers/cbt-09427-smt?utm_source=snapeda.com&utm_medium=referral&utm_campaign=snapedaBOM" 0 0 50 H I L BNN
@@ -220,11 +149,11 @@ X P P 0 200 100 D 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_C_Small-Device
+# C_Small-Device
 #
-DEF trackix-rescue_C_Small-Device C 0 10 N N 1 F N
+DEF C_Small-Device C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "trackix-rescue_C_Small-Device" 10 -80 50 H V L CNN
+F1 "C_Small-Device" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -238,11 +167,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_Conn_Coaxial-Connector
+# Conn_Coaxial-Connector
 #
-DEF trackix-rescue_Conn_Coaxial-Connector J 0 40 Y N 1 F N
+DEF Conn_Coaxial-Connector J 0 40 Y N 1 F N
 F0 "J" 10 120 50 H V C CNN
-F1 "trackix-rescue_Conn_Coaxial-Connector" 115 0 50 V V C CNN
+F1 "Conn_Coaxial-Connector" 115 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -263,11 +192,11 @@ X Ext 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_Crystal-Device
+# Crystal-Device
 #
-DEF trackix-rescue_Crystal-Device Y 0 40 N N 1 F N
+DEF Crystal-Device Y 0 40 N N 1 F N
 F0 "Y" 0 150 50 H V C CNN
-F1 "trackix-rescue_Crystal-Device" 0 -150 50 H V C CNN
+F1 "Crystal-Device" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -284,11 +213,11 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_Jumper_NC_Dual-Device
+# Jumper_NC_Dual-Device
 #
-DEF trackix-rescue_Jumper_NC_Dual-Device JP 0 30 Y N 1 F N
+DEF Jumper_NC_Dual-Device JP 0 30 Y N 1 F N
 F0 "JP" 50 -100 50 H V L CNN
-F1 "trackix-rescue_Jumper_NC_Dual-Device" 0 100 50 H V C BNN
+F1 "Jumper_NC_Dual-Device" 0 100 50 H V C BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -303,11 +232,11 @@ X 3 3 250 0 95 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_LED-Device
+# LED-Device
 #
-DEF trackix-rescue_LED-Device D 0 40 N N 1 F N
+DEF LED-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "trackix-rescue_LED-Device" 0 -100 50 H V C CNN
+F1 "LED-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -326,11 +255,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_R-Device
+# R-Device
 #
-DEF trackix-rescue_R-Device R 0 0 N Y 1 F N
+DEF R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "trackix-rescue_R-Device" 0 0 50 V V C CNN
+F1 "R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -343,11 +272,37 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_SIM808-SIM808
+# SIM5060-6-0-26-01-X_REVC-SIM5060-6-0-26-01-X_REVC
 #
-DEF trackix-rescue_SIM808-SIM808 IC 0 40 Y Y 1 L N
+DEF SIM5060-6-0-26-01-X_REVC-SIM5060-6-0-26-01-X_REVC J 0 40 N Y 1 L N
+F0 "J" -300 220 50 H V L BNN
+F1 "SIM5060-6-0-26-01-X_REVC-SIM5060-6-0-26-01-X_REVC" -300 -300 50 H V L BNN
+F2 "GCT_SIM5060-6-0-26-01-X_REVC" 0 0 50 H I L BNN
+F3 "None" 0 0 50 H I L BNN
+F4 "Unavailable" 0 0 50 H I L BNN
+F5 "Global Connector Technology" 0 0 50 H I L BNN
+F6 "SIM5060-6-0-26-01-A" 0 0 50 H I L BNN
+F7 "None" 0 0 50 H I L BNN
+F8 "6 Position 2.6 mm Profile Surface Mount Hinged SIM Card Connector" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -300 -200 300 -200 N
+P 2 0 0 10 -300 200 -300 -200 N
+P 2 0 0 10 300 -200 300 200 N
+P 2 0 0 10 300 200 -300 200 N
+X VCC C1 400 0 100 L 40 40 0 0 W
+X RST C2 -400 100 100 R 40 40 0 0 I
+X CLK C3 -400 -100 100 R 40 40 0 0 B C
+X GND C5 400 -100 100 L 40 40 0 0 W
+X VPP C6 400 100 100 L 40 40 0 0 W
+X I/O C7 -400 0 100 R 40 40 0 0 B
+ENDDRAW
+ENDDEF
+#
+# SIM808-SIM808
+#
+DEF SIM808-SIM808 IC 0 40 Y Y 1 L N
 F0 "IC" -600 2401 50 H V L BNN
-F1 "trackix-rescue_SIM808-SIM808" -601 -2603 50 H V L BNN
+F1 "SIM808-SIM808" -601 -2603 50 H V L BNN
 F2 "QFN100P2400X2400X260-68N" 0 0 50 H I L BNN
 F3 "Module: GPS/GSM; GPRS; 2G; 1800MHz, 900MHz; GPIO, Serial, USB; SMD" 0 0 50 H I L BNN
 F4 "Simcom" 0 0 50 H I L BNN
@@ -433,11 +388,11 @@ X DTR 9 -800 200 200 R 40 40 0 0 I
 ENDDRAW
 ENDDEF
 #
-# trackix-rescue_SW_Push-Switch
+# SW_Push-Switch
 #
-DEF trackix-rescue_SW_Push-Switch SW 0 40 N N 1 F N
+DEF SW_Push-Switch SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "trackix-rescue_SW_Push-Switch" 0 -60 50 H V C CNN
+F1 "SW_Push-Switch" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
