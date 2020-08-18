@@ -1,0 +1,4 @@
+Error: Component “U6” footprint “PQFN80P300X500X100-14N” was not found in any libraries in the footprint library table. 
+Error: Cannot add new symbol “BR1:/5C866556” due to missing footprint “DIOB_DB107S”. 
+Error: Component “BR1” footprint “DIOB_DB107S” was not found in any libraries in the footprint library table. 
+Error: Cannot add new symbol “U6:/5E8686DB” due to missing footprint “PQFN80P300X500X100-14N”. 
