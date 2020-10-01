@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L trackix-rescue:Crystal-Device-trackix-rescue 8MHz1
-U 1 1 5C69FEF1
-P 11125 4525
-F 0 "8MHz1" V 11079 4656 50  0000 L CNN
-F 1 "Crystal" V 11170 4656 50  0000 L CNN
-F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm_HandSoldering" H 11125 4525 50  0001 C CNN
-F 3 "~" H 11125 4525 50  0001 C CNN
-	1    11125 4525
-	0    1    1    0   
-$EndComp
-$Comp
 L trackix-rescue:C_Small-Device-trackix-rescue C11
 U 1 1 5C6A0E74
 P 11575 4375
@@ -47,10 +36,6 @@ F 3 "~" H 11575 4675 50  0001 C CNN
 	1    11575 4675
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	11125 4675 11475 4675
-Wire Wire Line
-	11125 4375 11475 4375
 $Comp
 L power:GND #PWR0110
 U 1 1 5C6A5774
@@ -76,15 +61,9 @@ Wire Wire Line
 Wire Wire Line
 	10925 4525 10925 4675
 Wire Wire Line
-	10925 4675 11125 4675
-Connection ~ 11125 4675
-Wire Wire Line
 	10025 4425 10925 4425
 Wire Wire Line
 	10925 4425 10925 4375
-Wire Wire Line
-	10925 4375 11125 4375
-Connection ~ 11125 4375
 $Comp
 L power:GND #PWR0111
 U 1 1 5C6ACE1F
@@ -202,15 +181,11 @@ Connection ~ 10625 4325
 Wire Wire Line
 	10625 4325 10725 4325
 Wire Wire Line
-	10925 3200 10925 3475
-Wire Wire Line
 	10925 3875 10575 3875
 Wire Wire Line
 	10575 3875 10575 4225
 Wire Wire Line
 	10575 4225 10025 4225
-Wire Wire Line
-	10825 3200 10825 3375
 Wire Wire Line
 	10825 3825 10525 3825
 Wire Wire Line
@@ -1052,17 +1027,6 @@ F 3 "" H 9950 10750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L trackix-rescue:ATmega328P-AU-MCU_Microchip_ATmega-trackix-rescue U1
-U 1 1 5C69F59F
-P 9425 5025
-F 0 "U1" H 9425 3439 50  0000 C CNN
-F 1 "ATmega328P-AU" H 9425 3348 50  0000 C CNN
-F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 9425 5025 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 9425 5025 50  0001 C CNN
-	1    9425 5025
-	1    0    0    -1  
-$EndComp
-$Comp
 L trackix-rescue:AVR-ISP-6-Connector-trackix-rescue J4
 U 1 1 5C6CC941
 P 10725 2800
@@ -1189,27 +1153,27 @@ Wire Wire Line
 $Comp
 L trackix-rescue:Conn_Coaxial-Connector-trackix-rescue J2
 U 1 1 5E9805A1
-P 7275 2625
-F 0 "J2" H 7374 2601 50  0000 L CNN
-F 1 "GPS" H 7374 2510 50  0000 L CNN
-F 2 "Connectors_Molex:Molex_Microcoaxial_RF" H 7275 2625 50  0001 C CNN
-F 3 "" H 7275 2625 50  0001 C CNN
-	1    7275 2625
+P 7850 2625
+F 0 "J2" H 7949 2601 50  0000 L CNN
+F 1 "GPS" H 7949 2510 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_Microcoaxial_RF" H 7850 2625 50  0001 C CNN
+F 3 "" H 7850 2625 50  0001 C CNN
+	1    7850 2625
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0135
 U 1 1 5E9806DC
-P 7275 2925
-F 0 "#PWR0135" H 7275 2675 50  0001 C CNN
-F 1 "GND" H 7280 2752 50  0000 C CNN
-F 2 "" H 7275 2925 50  0001 C CNN
-F 3 "" H 7275 2925 50  0001 C CNN
-	1    7275 2925
+P 7850 2925
+F 0 "#PWR0135" H 7850 2675 50  0001 C CNN
+F 1 "GND" H 7855 2752 50  0000 C CNN
+F 2 "" H 7850 2925 50  0001 C CNN
+F 3 "" H 7850 2925 50  0001 C CNN
+	1    7850 2925
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7275 2825 7275 2925
+	7850 2825 7850 2925
 $Comp
 L Device:C C6
 U 1 1 5E9DAD3B
@@ -1377,42 +1341,38 @@ Wire Wire Line
 $Comp
 L Device:L L1
 U 1 1 5ECC283D
-P 6775 2625
-F 0 "L1" V 6965 2625 50  0000 C CNN
-F 1 "L27nH" V 6874 2625 50  0000 C CNN
-F 2 "Inductors_SMD:L_0402" H 6775 2625 50  0001 C CNN
-F 3 "~" H 6775 2625 50  0001 C CNN
-	1    6775 2625
+P 7350 2625
+F 0 "L1" V 7540 2625 50  0000 C CNN
+F 1 "L27nH" V 7449 2625 50  0000 C CNN
+F 2 "Inductors_SMD:L_0402" H 7350 2625 50  0001 C CNN
+F 3 "~" H 7350 2625 50  0001 C CNN
+	1    7350 2625
 	0    -1   -1   0   
 $EndComp
 $Comp
 L device:R R17
 U 1 1 5ECC2D77
-P 6375 2625
-F 0 "R17" V 6168 2625 50  0000 C CNN
-F 1 "R22" V 6259 2625 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6305 2625 50  0001 C CNN
-F 3 "~" H 6375 2625 50  0001 C CNN
-	1    6375 2625
+P 6950 2625
+F 0 "R17" V 6743 2625 50  0000 C CNN
+F 1 "R10" V 6834 2625 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6880 2625 50  0001 C CNN
+F 3 "~" H 6950 2625 50  0001 C CNN
+	1    6950 2625
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6525 2625 6625 2625
+	7100 2625 7200 2625
 Wire Wire Line
-	6925 2625 7000 2625
+	7500 2625 7575 2625
 Wire Wire Line
 	6200 1600 5750 1600
 Wire Wire Line
 	5750 1600 5750 2675
 Wire Wire Line
-	7000 2625 7000 3175
+	7575 2625 7575 3175
+Connection ~ 7575 2625
 Wire Wire Line
-	6450 3175 7000 3175
-Connection ~ 7000 2625
-Wire Wire Line
-	7000 2625 7075 2625
-Wire Wire Line
-	6225 2625 5950 2625
+	7575 2625 7650 2625
 Wire Wire Line
 	5950 2625 5950 2675
 Wire Wire Line
@@ -1707,24 +1667,6 @@ Text GLabel 10200 6225 2    50   Input ~ 0
 AUX_ON
 Wire Wire Line
 	10025 3925 10100 3925
-Text GLabel 10025 3500 0    50   Input ~ 0
-SCK
-Text GLabel 11625 3375 2    50   Input ~ 0
-MOSI
-Wire Wire Line
-	10825 3375 11000 3375
-Wire Wire Line
-	10725 3200 10725 3500
-Connection ~ 10825 3375
-Wire Wire Line
-	10825 3375 10825 3825
-Text GLabel 11625 3475 2    50   Input ~ 0
-MISO
-Wire Wire Line
-	11225 3475 10925 3475
-Connection ~ 10925 3475
-Wire Wire Line
-	10925 3475 10925 3875
 Wire Wire Line
 	10025 6125 10200 6125
 Wire Wire Line
@@ -1747,9 +1689,6 @@ Wire Wire Line
 	10150 5325 10025 5325
 Text GLabel 13150 6775 0    50   Input ~ 0
 RESET
-Connection ~ 10725 3500
-Wire Wire Line
-	10725 3500 10725 3775
 Text GLabel 10150 5125 2    50   Input ~ 0
 SDA
 Text GLabel 10150 5225 2    50   Input ~ 0
@@ -1881,47 +1820,6 @@ Wire Wire Line
 Connection ~ 1800 10075
 Wire Wire Line
 	1800 10075 1875 10075
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5E888631
-P 11150 3375
-F 0 "JP3" H 11150 3580 50  0000 C CNN
-F 1 "MOSI" H 11150 3489 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 11150 3375 50  0001 C CNN
-F 3 "~" H 11150 3375 50  0001 C CNN
-	1    11150 3375
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5E888BC3
-P 11375 3475
-F 0 "JP4" H 11375 3680 50  0000 C CNN
-F 1 "MISO" H 11375 3589 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 11375 3475 50  0001 C CNN
-F 3 "~" H 11375 3475 50  0001 C CNN
-	1    11375 3475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11300 3375 11625 3375
-Wire Wire Line
-	11625 3475 11525 3475
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5EA34996
-P 10450 3500
-F 0 "JP1" H 10450 3705 50  0000 C CNN
-F 1 "SCK" H 10450 3614 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 10450 3500 50  0001 C CNN
-F 3 "~" H 10450 3500 50  0001 C CNN
-	1    10450 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10025 3500 10300 3500
-Wire Wire Line
-	10600 3500 10725 3500
 Wire Wire Line
 	10325 3400 10625 3400
 Wire Wire Line
@@ -1954,7 +1852,7 @@ Wire Notes Line
 Wire Notes Line
 	3975 1300 7550 1300
 Wire Notes Line
-	7550 1300 7550 4500
+	8125 1300 8125 4500
 Text Notes 11425 7800 0    50   ~ 0
 3.3v Regulator\n
 Text Notes 1275 8000 0    50   ~ 0
@@ -2036,8 +1934,8 @@ L Connector:Conn_01x06_Male J5
 U 1 1 5F694D1B
 P 6550 6050
 F 0 "J5" H 6656 6428 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 6656 6337 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 6550 6050 50  0001 C CNN
+F 1 "Conn_01x06_Male" H 6656 6337 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 6550 6050 50  0001 C CNN
 F 3 "~" H 6550 6050 50  0001 C CNN
 	1    6550 6050
 	1    0    0    -1  
@@ -2084,8 +1982,6 @@ Text GLabel 10200 6025 2    50   Input ~ 0
 sim_tx
 Text GLabel 10200 5925 2    50   Input ~ 0
 sim_rx
-Text GLabel 10200 5725 2    50   Input ~ 0
-sim_ring
 Text GLabel 10200 5825 2    50   Input ~ 0
 sim_dtr
 $Comp
@@ -2170,4 +2066,74 @@ F 3 "" H 5675 5775 50  0001 C CNN
 	1    5675 5775
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10925 3200 10925 3875
+Wire Wire Line
+	10825 3200 10825 3825
+$Comp
+L trackix-rescue:ATmega328P-AU-MCU_Microchip_ATmega-trackix-rescue U1
+U 1 1 5C69F59F
+P 9425 5025
+F 0 "U1" H 9425 3439 50  0000 C CNN
+F 1 "ATmega328P-AU" H 9425 3348 50  0000 C CNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 9425 5025 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 9425 5025 50  0001 C CNN
+	1    9425 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10725 3200 10725 3775
+Text GLabel 10200 5725 2    50   Input ~ 0
+GPS_RX
+$Comp
+L Device:Crystal_GND23 Y1
+U 1 1 5F64A711
+P 11200 4525
+F 0 "Y1" V 11154 4766 50  0000 L CNN
+F 1 "Crystal_GND23" V 11245 4766 50  0000 L CNN
+F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm_HandSoldering" H 11200 4525 50  0001 C CNN
+F 3 "~" H 11200 4525 50  0001 C CNN
+	1    11200 4525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10925 4375 11200 4375
+Wire Wire Line
+	10925 4675 11200 4675
+Connection ~ 11200 4375
+Connection ~ 11200 4675
+Wire Wire Line
+	11200 4375 11475 4375
+Wire Wire Line
+	11200 4675 11475 4675
+$Comp
+L power:GND #PWR0144
+U 1 1 5F688FB9
+P 11400 4775
+F 0 "#PWR0144" H 11400 4525 50  0001 C CNN
+F 1 "GND" H 11405 4602 50  0000 C CNN
+F 2 "" H 11400 4775 50  0001 C CNN
+F 3 "" H 11400 4775 50  0001 C CNN
+	1    11400 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 5F69DBA3
+P 11000 4775
+F 0 "#PWR0146" H 11000 4525 50  0001 C CNN
+F 1 "GND" H 11005 4602 50  0000 C CNN
+F 2 "" H 11000 4775 50  0001 C CNN
+F 3 "" H 11000 4775 50  0001 C CNN
+	1    11000 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 4525 11400 4775
+Wire Wire Line
+	11000 4525 11000 4775
+Wire Wire Line
+	6450 3175 7575 3175
+Wire Wire Line
+	5950 2625 6800 2625
 $EndSCHEMATC
